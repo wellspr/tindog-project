@@ -82,6 +82,8 @@ body {
 
 .right-pane {
     width: 25%;
+    display: flex;
+    justify-content: center;
 }
 
 .iphone > img {
@@ -212,6 +214,8 @@ body {
 
 .media-item {
     flex-basis: 10vw;
+    display: flex;
+    justify-content: center;
 }
 
 .media-item > img {
@@ -383,4 +387,15 @@ body {
 
 .attribution {
     font-size: 1.4rem;
+}
+
+
+
+/* Desktop - small */
+@media (max-width: 992px) {
+    
+    .pricing-cards {
+        width: 96%;
+    }
+    
 }

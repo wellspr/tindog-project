@@ -1,0 +1,79 @@
+@media (max-width: 768px) {
+    
+    .title {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+
+    .left-pane {
+        width: 80%;
+    }
+
+    .right-pane {
+        width: 100%;
+    }
+
+    .iphone {
+        transform: translateY(6rem);
+
+    }
+
+    .iphone > img {
+        height: 25rem;
+        transform: rotate(-30deg);
+    }
+
+    .features {
+        position: relative;
+        background-color: #ffffff;
+        z-index: 1000;
+
+        flex-direction: column;
+    }
+
+    .feature {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .media {
+        width: 90%;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .media-item {
+        flex-basis: 40%;
+    }
+
+    .media-item:nth-child(2) > img {
+        width: unset;
+        height: 2.8rem;
+    }
+
+
+    .pricing-heading, .pricing-subheading {
+        text-align: center;
+        margin: 0 1rem;
+    }
+    .pricing-cards {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+
+    .footer-content {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .footer-col.brand {
+        width: 100%;
+        text-align: center;
+    }
+}
