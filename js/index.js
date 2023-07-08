@@ -8,7 +8,7 @@ const openMenu = () => {
     menu.classList.add("menu-open");
     menuBtn.classList.add("menu-open");
     closeBtn.classList.add("menu-open");
-    document.body.style.overflowY = "hidden";
+    document.body.classList.add("no-scroll");
 };
 
 const closeMenu = () => {
@@ -16,7 +16,7 @@ const closeMenu = () => {
     menu.classList.remove("menu-open");
     menuBtn.classList.remove("menu-open");
     closeBtn.classList.remove("menu-open");
-    document.body.style.overflowY = "unset";
+    document.body.classList.remove("no-scroll");
 };
 
 menuBtn.addEventListener("click", () => {
@@ -39,4 +39,8 @@ menu.addEventListener("click", event => {
             closeMenu();
         }
     });
+});
+
+window.addEventListener("resize", () => {
+    closeMenu();
 });
