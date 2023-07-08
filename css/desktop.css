@@ -5,6 +5,7 @@ https://fonts.google.com/share?selection.family=Montserrat:wght@300;700%7CYsabea
 
 :root {
     --light-color: #f8f9fb;
+    --dark-color: #212429;
 }
 
 * {
@@ -33,6 +34,10 @@ body {
     display: flex;
     align-items: center;
     gap: 2rem;
+}
+
+.menu-icon, .close {
+    display: none;
 }
 
 .brand {
@@ -267,7 +272,7 @@ body {
 }
 
 .card:last-of-type {
-    border: 1px solid #212429;
+    border: 1px solid var(--dark-color);
 }
 
 .card > * {
@@ -291,11 +296,11 @@ body {
 
 .button-light {
     background-color: #f8f8f8;
-    border: 1px solid #212429;
+    border: 1px solid var(--dark-color);
 }
 
 .background-dark {
-    background-color: #212429;
+    background-color: var(--dark-color);
     color: var(--light-color);
 }
 
