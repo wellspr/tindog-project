@@ -8,7 +8,6 @@ const openMenu = () => {
     menu.classList.add("menu-open");
     menuBtn.classList.add("menu-open");
     closeBtn.classList.add("menu-open");
-    document.body.classList.add("no-scroll");
 };
 
 const closeMenu = () => {
@@ -16,7 +15,6 @@ const closeMenu = () => {
     menu.classList.remove("menu-open");
     menuBtn.classList.remove("menu-open");
     closeBtn.classList.remove("menu-open");
-    document.body.classList.remove("no-scroll");
 };
 
 menuBtn.addEventListener("click", () => {
@@ -30,10 +28,6 @@ closeBtn.addEventListener("click", () => {
 const menuLinks = document.querySelectorAll(".menu-item a");
 
 menu.addEventListener("click", event => {
-    console.log(event.target);
-
-    console.log(event.target);
-
     Object.values(menuLinks).forEach(value => {
         if (value === event.target) {
             closeMenu();

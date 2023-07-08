@@ -1,8 +1,4 @@
 @media (max-width: 768px) {
-    
-    .no-scroll {
-        overflow-y: hidden;
-    }
 
     .header {
         width: 100%;
